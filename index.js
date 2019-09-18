@@ -1,3 +1,13 @@
+function createRecipe(){
+  let recipe = recipeForCreateAndUpdate();
+
+  let recipeTemplate = document.getElementById("recipe-template").innerHTML;
+  let template = Handlebars.compile(recipeTemplate);
+  let result = template(recipe);
+  document.getElementById("main").innerHTML = result;
+}
+
+
 function updateRecipe() {
   var recipe = recipeForCreateAndUpdate()
   var recipeTemplate = document.getElementById("recipe-template").innerHTML
@@ -26,16 +36,6 @@ function recipeForEdit(){
 
   return recipe;
 }
-
-function createRecipe(){
-  let recipe = recipeForCreateAndUpdate();
-
-  let recipeTemplate = document.getElementById("recipe-template").innerHTML;
-  let template = Handlebars.compile(recipeTemplate);
-  let result = template(recipe);
-  document.getElementById("main").innerHTML = result;
-}
-
 
 function recipeForCreateAndUpdate(){
   let ingredNodes = document.getElementsByName("ingredients")
