@@ -8,6 +8,11 @@
   </head>
   <body>
     <main id="main">
+     <script id="recipe-form-template" type="text/x-handlebars-template">
+      <form id="recipe-form" onsubmit="{{onSubmit}};return false;">
+        {{>recipeFormPartial }}
+      </form>
+      </script>
     </main>
     <script src="node_modules/handlebars/dist/handlebars.min.js"></script>
     <script src="index.js"></script>
