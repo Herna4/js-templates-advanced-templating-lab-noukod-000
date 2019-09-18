@@ -7,7 +7,6 @@ function createRecipe(){
   document.getElementById("main").innerHTML = result;
 }
 
-
 function updateRecipe() {
   var recipe = recipeForCreateAndUpdate()
   var recipeTemplate = document.getElementById("recipe-template").innerHTML
@@ -80,6 +79,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
 })
 
 
+
+
+
+
+
+
+
+
+
+
 // function initForm() {
 //   var formTemplate = document.getElementById("recipe-form-template").innerHTML
 //   var template = Handlebars.compile(formTemplate)
@@ -148,29 +157,3 @@ document.addEventListener("DOMContentLoaded", function(event) {
 // document.addEventListener("DOMContentLoaded", function(event) {
 //   init()
 // });
-
-
-// // function formInit(){
-// //   let formTemplate = document.getElementById("recipe-form-template").innerHTML; 
-// //   let template = Handlebars.compile(formTemplate);
-// //   document.getElementsByTagName("main")[0].innerHTML = template({'onSubmit': 'createRecipe(event)'});
-// // }
-
-// // function init() {
-// //   Handlebars.registerPartial('recipeFormPartial',
-// //   document.getElementById('recipe-form-partial').innerHTML);
-
-// //   Handlebars.registerPartial('recipeDetailsPartial',
-// //   document.getElementById('recipe-details-partial').innerHTML);
-
-// //   Handlebars.registerHelper('displayIngredient', function(ingredient){
-// //     return new Handlebars.SafeString('<li name="ingredientsList">' + ingredient + '</li>');
-// //   });
-
-// //   formInit();
-// // }
-
-
-// // document.addEventListener("DOMContentLoaded", function(event) {
-// //   init()
-// // })
